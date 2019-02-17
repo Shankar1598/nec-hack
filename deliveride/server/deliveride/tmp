@@ -1,0 +1,57 @@
+JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjNWZiYjA3MWExNTVjMWQwYzM2YTkxNCIsInVzZXJuYW1lIjoiVVIgSE9NRSIsImlhdCI6MTU0OTc3NzY4M30.G1Hhtr0ORD2T0sQOee97HXe1EZDyvXGAwRPEJ5urRO8
+
+//send the request to nearby drivers
+
+  //save the booking model
+  try {
+    const bookingStatus = await book.save();
+  } catch (error) {
+    return res.json({ message: "sorry your request could not be processed" });
+  }
+
+  return res.send(nearByDrivers);
+
+  //function that loops through all the drivers
+  // let reqCheck = 0;
+  // for (let i = 0; i < nearByDrivers.length; i++) {
+
+  //   let findDriver = await Driver.findById(nearByDrivers.identity)
+  //   nearByDrivers[i].Requests.push(bookingStatus);
+  //   //save all the records
+  //   try {
+  //     let updateDriver = await nearByDrivers[i].save();
+  //     reqCheck++;
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+
+  // if (reqCheck === nearByDrivers.length) {
+  //   res.json({ message: "request successfully sent" });
+  // }
+
+  // //update the data to the user
+  // if (bookingStatus) {
+  //   foundUser.bookInfo.push(bookingStatus);
+  //   try {
+  //     const updateBook = await foundUser.save();
+  //   } catch (e) {
+  //     res.json({ message: "unknown error occured try again" });
+  //   }
+
+  //   res.json({ message: "booked successfully" });
+  // } else {
+  //   res.json({
+  //     message: "sorry your request could not be processed please try again!"
+  //   });
+  // }
+
+
+
+  #3c2662
+
+  base 325891
+
+
+
+  AIzaSyB1Q7pVw6rESQCcwqmlEp9mANh5NCDQBwE
